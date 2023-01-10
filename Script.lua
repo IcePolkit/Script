@@ -5,7 +5,7 @@ local Section = Tab:NewSection("You shall die.")
 Section:NewToggle("Auto Reset", "Instant Reset", function(state)
 _G.Autoreset = state
 while _G.Autoreset do
-wait(0.10)
+wait(0.20)
 game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
 end
 end)
